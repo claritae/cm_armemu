@@ -28,17 +28,4 @@ BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := yaffs2
 # BOARD_FLASH_BLOCK_SIZE := 512
 # TARGET_USERIMAGES_SPARSE_EXT_DISABLED := true
 
-TARGET_KERNEL_SOURCE := kernel/armemu
-TARGET_KERNEL_CONFIG := goldfish_armv7_defconfig
-BOARD_KERNEL_IMAGE_NAME := uImage
-BOARD_USES_UBOOT := true
-TARGET_PREBUILT_KERNEL := device/generic/armemu/kernel
-
-# Convert kernel image to uImage
-KERNEL_EXTERNAL_MODULES:
-	echo "Convert ramdisk.img to U-Boot image."
-#	ls out/target/product/armemu/ramdisk.img
-
-TARGET_KERNEL_MODULES := KERNEL_EXTERNAL_MODULES
-
 BOARD_HAS_NO_SELECT_BUTTON := true

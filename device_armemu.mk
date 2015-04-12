@@ -62,7 +62,7 @@ PRODUCT_COPY_FILES += \
      $(LOCAL_KERNEL):kernel \
      $(LOCAL_KERNEL):system/zImage.uimg \
      $(LOCAL_RAMDISK_UIMAGE):system/ramdisk.uimg \
-     $(LOCAL_RECOVERY_UIMAGE):system/ramdisk-recovery.uimg \
+#     $(LOCAL_RECOVERY_UIMAGE):system/ramdisk-recovery.uimg \
      device/generic/armemu/init.recovery.armemu.rc:root/init.recovery.armemu.rc \
      device/generic/armemu/init.recovery.armemu.sh:root/init.recovery.armemu.sh
 
